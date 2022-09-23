@@ -1,0 +1,21 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+Enter aid : <input type="text" [(ngModel)]="iaid" ><br>
+Enter Movie name : <input type="text" [(ngModel)]="iname" ><br>
+Enter language : <input type="text" [(ngModel)]="ilang" ><br>
+Enter rating : <input type="text" [(ngModel)]="irating" ><br>
+Enter type : <input type="text" [(ngModel)]="itype" ><br>
+Enter Lead Actor : <input type="text" [(ngModel)]="iactor1" ><br>
+Enter Actor 2 : <input type="text" [(ngModel)]="iactor2" ><br>
+
+
+<button type="submit"  class="btn btn-secondary btn-lg" (click)="insertData()" >Enter Data</button>

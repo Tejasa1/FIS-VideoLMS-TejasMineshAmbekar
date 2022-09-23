@@ -1,0 +1,49 @@
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<div class="center">
+
+    Search Movie By Rating : <input type="text" [(ngModel)]="srating" >
+    <button type="submit" class="btn btn-secondary btn-lg" (click)="searchDataByRating()" >Search</button>
+
+</div>
+
+<br><br><br>
+<table border=3 class="table table-light">
+    
+    <thead class="thead-dark">
+        <tr >
+            <th>Admin ID</th>
+            <th>Movie Name</th>
+            <th>Language</th>
+            <th>Rating</th>
+            <th>Type</th>
+            <th>Lead Actor</th>
+            <th>Actress</th>
+          </tr>
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let movie of admin">
+            <td>{{ movie.aid }}</td>
+            <td>{{ movie.name }}</td>
+            <td>{{ movie.lang }}</td>
+            <td>{{ movie.rating }}</td>
+            <td>{{ movie.type }}</td>
+            <td>{{ movie.actor1 }}</td>
+            <td>{{ movie.actor2 }}</td>
+        </tr>
+    
+    </tbody>
+</table>
+
